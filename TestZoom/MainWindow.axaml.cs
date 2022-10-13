@@ -72,10 +72,12 @@ namespace TestZoom
                 if (e.Key == Key.P)
                 {
                     SetZoomLevel(mZoomLevel + 0.1);
+                    e.Handled = true;
                 }
                 else if (e.Key == Key.O)
                 {
                     SetZoomLevel(mZoomLevel - 0.1);
+                    e.Handled = true;
                 }
             }
 
